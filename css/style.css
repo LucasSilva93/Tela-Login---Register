@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif, Arial;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-primary,
+.container-secondary {
+  display: flex;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #019df788;
+  box-shadow: 0 0 30px #019df7;
+}
+
+.active {
+  transform: scale(0);
+}
+
+
+
+/* **** login - create informações **** */
+
+#login-info,
+#create-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #019df7;
+  width: 600px;
+  height: 500px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+#login-info .title,
+#create-info .title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#login-info p,
+#create-info p {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* **** butttons **** */
+
+.btn {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: #019df7;
+  
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #019df7;
+  border: 1px solid #019df7;
+}
+
+/* **** create-account cadastro //  login-account **** */
+
+#create-account,
+#login-account {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background: #fff;
+  gap: 10px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#create-account .title,
+#login-account .title {
+  font-size: 2rem;
+  color: #019df7;
+}
+
+form input {
+  margin-bottom: 10px;
+  height: 30px;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #019df7;
+}
+
+#create-account p,
+#login-account p {
+  color: #000;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.social-midia ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.social-midia ul li a {
+  padding:10px;
+}
+
+.facebook,
+.google,
+.linkedin{
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  color: #000;
+}
+
+.resgatar {
+  margin-top: 10px;
+}
+
+.resgatar a {
+  color: red;
+  font-weight: 700;
+}
+
+.resgatar a:hover {
+  text-decoration: underline;
+}
+
+/* ******* responsivo ******* */
+
+@media (max-width: 640px) {
+  #container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .container-primary,
+  .container-secondary{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .btn-night-light{
+    margin-top: 170px;
+    margin-right: 5%;
+  }
+
+  #login-info,
+  #create-info{
+    padding: 10px;
+    margin-top: 10px;
+  }
+  #create-account form,
+  #login-account form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    margin-top: 20px;
+  }
+  #login-info .btn,
+  #create-info .btn{
+    margin-bottom: 20px;
+  }
+  .social-midia .btn {
+    margin-bottom: 10px;
+  }
+}
+
+/* *****  Modo dark   ****** */
+
+.btn-night-light{
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 2rem;
+  color: #019df7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-dark{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.shadow{
+  border: none;
+  box-shadow: 0 0 15px #ffffff;
+}
+
+.border{
+  border-bottom: 1px solid #131313;
+}
+
+.black-btn{
+  background: #131313;
+  border: 1px solid #fff;
+}
+
+.black-btn:hover{
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+

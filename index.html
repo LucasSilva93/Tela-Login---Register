@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- SCRIPTS -->
+    <script src="js/scripts.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <div id="container">
+
+      <div class="btn-night-light">
+        <div class="icon-dark"><ion-icon name="moon-outline"></ion-icon></div>
+        <div class="icon-light active"><ion-icon name="sunny"></ion-icon></div>
+      </div>
+
+      <div class="container-primary">
+        <div id="login-info">
+          <h2 class="title">Bem Vindos!</h2>
+          <p>Se você já é nosso cliente <br>
+          faça o login.</p>
+          <button class="btn">entrar</button>
+        </div> <!--login container informe-->
+        <div id="create-account">
+          <h2 class="title">Criar Conta</h2>
+          <form>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+          </form>
+          <p>ou cadastre-se com:</p>
+          <div class="social-midia">
+            <ul>
+              <li><a class="facebook" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a class="google" href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+              <li><a class="linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+              <button class="btn">cadastrar</button>
+          </div>
+        </div> <!--Criar conta-->
+      </div>
+      <div class="container-secondary  dark">
+        <div id="create-info">
+          <h2 class="title">Olá, Tudo bem!</h2>
+          <p class="conteudo">Caso não seja nosso cliente <br>
+        realize o cadastro gratuitamente</p>
+          <button class="btn">cadastrar</button>
+        </div> <!--Criar conta informe-->
+        <div id="login-account">
+          <h2 class="title">Login</h2>
+          <form>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+          </form>
+          <p class="conteudo">ou conecte-se com:</p>
+          <div class="social-midia">
+            <ul>
+              <li><a class="facebook" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a class="google" href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+              <li><a class="linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            </ul>
+              <button class="btn">entrar</button>
+              <p class="resgatar">Esqueceu a senha: <a href="#">Click aqui</a></p>
+          </div>
+        </div> <!--logar conta-->
+      </div>
+    </div> <!--Container principal-->
+  </body>
+</html>

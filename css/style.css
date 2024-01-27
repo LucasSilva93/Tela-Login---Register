@@ -12,6 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #fff;
 }
 
 #container {
@@ -41,8 +42,6 @@ body {
 .active {
   transform: scale(0);
 }
-
-
 
 /* **** login - create informações **** */
 
@@ -82,8 +81,6 @@ body {
   border: 1px solid #fff;
   color: #fff;
   background: #019df7;
-  
-  outline: none;
   cursor: pointer;
   font-size: 1.1rem;
   transition: 0.5s;
@@ -93,6 +90,10 @@ body {
   background: #fff;
   color: #019df7;
   border: 1px solid #019df7;
+}
+
+#login-account .btn {
+  margin-top: -10px;
 }
 
 /* **** create-account cadastro //  login-account **** */
@@ -105,6 +106,7 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
   background: #fff;
   gap: 10px;
   border-radius: 0px 20px 20px 0px;
@@ -159,8 +161,11 @@ form input {
 }
 
 .resgatar a {
-  color: red;
-  font-weight: 700;
+  color: #000;
+  font-size: .9rem;
+  display: flex;
+  margin-top: -20px;
+  margin-left: 70px;
 }
 
 .resgatar a:hover {
@@ -169,7 +174,7 @@ form input {
 
 /* ******* responsivo ******* */
 
-@media (max-width: 640px) {
+@media (max-width: 400px) {
   #container {
     width: 100%;
     height: 100vh;
@@ -190,8 +195,15 @@ form input {
     padding: 0px 10px;
   }
   .btn-night-light{
-    margin-top: 170px;
+    margin-top: 75px;
     margin-right: 5%;
+  }
+  #create-account .title,
+  #login-account .title,
+  #login-info .title,
+  #create-info .title{
+    margin-top: 30px;
+    font-size: 1.5rem;
   }
 
   #login-info,

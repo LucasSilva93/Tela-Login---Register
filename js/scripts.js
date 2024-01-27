@@ -18,14 +18,17 @@ login.addEventListener("click", () => {
 
 // *************************  EVENTO DARK
 
-const trocaTemaDark = document.querySelector("#container .btn-night-light .icon-dark ");
-const trocaTemaLight = document.querySelector("#container .btn-night-light .icon-light ");
+const trocaTemaDark = document.querySelector(
+  "#container .btn-night-light .icon-dark "
+);
+const trocaTemaLight = document.querySelector(
+  "#container .btn-night-light .icon-light "
+);
 
 trocaTemaDark.addEventListener("click", () => {
-
-  trocaTemaDark.classList.add('active')
-  trocaTemaLight.classList.remove('active')
-  trocaTemaLight.style.color= '#000'
+  trocaTemaDark.classList.add("active");
+  trocaTemaLight.classList.remove("active");
+  trocaTemaLight.style.color = "#000";
 
   // background infos
   const body = document.querySelector("body");
@@ -61,15 +64,14 @@ trocaTemaDark.addEventListener("click", () => {
   const btnLoginAccount = document.querySelector("#login-account .btn");
   btnCreateAccount.classList.add("black-btn");
   btnLoginAccount.classList.add("black-btn");
-
 });
 
 // ****************************    EVENTO LIGHT
 
-trocaTemaLight.addEventListener('click', () => {
-  trocaTemaLight.classList.add('active')
-  trocaTemaDark.classList.remove('active')
-  trocaTemaDark.style.color= '#019df7'
+trocaTemaLight.addEventListener("click", () => {
+  trocaTemaLight.classList.add("active");
+  trocaTemaDark.classList.remove("active");
+  trocaTemaDark.style.color = "#019df7";
 
   // background infos
   const body = document.querySelector("body");
@@ -105,5 +107,4 @@ trocaTemaLight.addEventListener('click', () => {
   const btnLoginAccount = document.querySelector("#login-account .btn");
   btnCreateAccount.classList.remove("black-btn");
   btnLoginAccount.classList.remove("black-btn");
-
-})
+});
